@@ -55,10 +55,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <section className="pb-12 relative px-4 lg:px-8 mt-24">
+            <section className="pb-12 relative px-4 md:px-8 mt-24">
                 <h2 className="text-2xl text-black font-semibold dark:text-white mb-8">Generate</h2>
 
-                <div className="grid gap-6 lg:grid-cols-3 xl:grid-cols-3 lg:gap-16">
+                <div className="grid gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     <GenerateCards image={"image.svg"} title={"Image"} text={"Generate images with custom styles in flux and ideogram"} isNew={true} />
                     <GenerateCards image={"video.svg"} title={"Video"} text={"Generate images with custom styles in flux and ideogram"} isNew={false} />
                     <GenerateCards image={"realtime.svg"} title={"Realtime"} text={"Generate images with custom styles in flux and ideogram"} isNew={false} />
