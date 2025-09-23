@@ -2,30 +2,23 @@
 import Header from "@/components/header";
 import HeroSection from "@/components/heroSection";
 import { GenerateCards, ScrollBar } from "@/components/reUsable";
-import { useThemeStore } from "@/store/store";
-import Image from "next/image";
 import { useRef, useState } from "react";
 
 export default function Home() {
     const [visible, setVisible] = useState<number | null>(null);
-    //const [theme, setTheme] = useState<string>('dark');
-    //const changeTheme = () => setTheme((prev) => (prev === 'light'? 'dark': 'light'))
-
+    
     const scrollContainer = useRef<HTMLDivElement>(null)
-
-    const theme = useThemeStore((state) => state.theme)
-    //const container = document.querySelector('.snap-x-mandatory');
 
     const nextClick = () => {
         scrollContainer.current?.scrollBy({
-            left: 100,//scrollContainer.current.scrollWidth,
+            left: 100,
             behavior: 'smooth',
         })
     }
 
     const prevClick = () => {
         scrollContainer.current?.scrollBy({
-            left: -100,//scrollContainer.current.scrollWidth,
+            left: -100,
             behavior: 'smooth',
         })
     }
