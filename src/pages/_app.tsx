@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }, [theme]);
     
     return (
-        <main className={`bg-white dark:bg-black font-inter ${inter.className}`}>
+        <main className={`bg-white dark:bg-black font-inter ${inter.variable}`}>
             <Component {...pageProps} />
         </main>
     )

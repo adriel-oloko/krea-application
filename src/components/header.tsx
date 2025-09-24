@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DesktopNavButton, OpenButton } from "./reUsable";
+import { OpenButton } from "./reUsable";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
@@ -15,11 +15,6 @@ import {
 	VideoIcon,
     WandSparklesIcon,
 } from "lucide-react";
-
-type HeaderProps = {
-	theme: string;
-	changeTheme: () => void;
-};
 
 type NavbarProps = {
 	closeFunc: () => void;
